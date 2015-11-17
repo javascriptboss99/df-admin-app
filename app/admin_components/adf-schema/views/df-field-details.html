@@ -130,8 +130,11 @@
     <br />
 
     <label>DB Function</label>
-    <textarea json-edit="field.record.db_function.function" rows="5" cols="10" class="form-control"></textarea>
+    <df-simple-help data-options="helpText.db_function"></df-simple-help>
+    <input class="form-control" type="text" ng-model="field.record.db_function.function">
     <br/>
+
+    <label>DB Function Return Type</label>
     <select data-ng-options="type.value as type.name for type in returnTypeOptions" class="form-control"
             data-ng-model="field.record.db_function.type"></select>
     <br/>
